@@ -1,0 +1,71 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Dental Access Portal
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+	  
+<!-- Question -->	  
+      <h1>
+Please enter the email address or phone number you used when you applied
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+<!-- Add your content here -->
+
+  <div class="nhsuk-hint" id="contact-hint">
+        This will help us verify your identity.
+    </div>
+	
+
+ <!-- Text box -->
+		<div class="nhsuk-form-group">
+		  <label class="nhsuk-label" for="example">
+			Email address or mobile number
+		  </label>
+		  <input class="nhsuk-input" id="example" name="example" type="text">
+		</div>
+
+<a href ="docs/sign-in-verification" role= button draggable=" false class "nhsuk-button">
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Continue
+        </button>
+  
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

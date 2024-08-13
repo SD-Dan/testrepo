@@ -1,0 +1,136 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+	  
+<!-- Question -->	  
+      <h1>
+Welcome back
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+<!-- Add your content here -->
+
+<p> 
+You were last logged in on XX/XX/XXXX
+</p>
+
+
+<a href="/design-example/components/action-link/default?fullpage=undefined&amp;blankpage=undefined" class="design-example__pop-out" target="_blank" rel="noopener noreferrer">
+        Not you? <span class="nhsuk-u-visually-hidden"> default action link</span> Retry sign in
+      </a> 
+
+<div class="nhsuk-u-reading-width">
+<p class="nhsuk-u-margin-top-5 "> 
+To receive your One Time Passcode, please provide an NHS number and date of birth you have registered on the Dental Access Portal.
+</p>
+
+<p> 
+If you are applying on behalf of multiple people, please sign in using the details of one individual.
+</p>
+
+</div>
+
+
+ <!-- Text box -->
+        <div class="nhsuk-form-group">
+          <h1 class="nhsuk-label-wrapper">
+            <label class="nhsuk-label nhsuk-label--l" for="nhs-number">
+              What is your NHS number?
+            </label>
+          </h1>
+          <div class="nhsuk-hint" id="nhs-number-hint">
+            Your NHS number is a 10 digit number that you find on any letter the NHS has sent you. For example, <span class="nhsuk-u-nowrap">485 777 3456</span>.
+          </div>
+          <input class="nhsuk-input nhsuk-input--width-10" id="nhs-number" name="nhs-number" type="text" aria-describedby="nhs-number-hint" inputmode="numeric">
+        </div>
+
+
+
+<fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+    <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+      <h1 class="nhsuk-fieldset__heading">
+        What is your date of birth?
+      </h1>
+    </legend>
+    <div class="nhsuk-hint" id="example-hint">
+      For example, 15 3 1984
+    </div>
+
+    <div class="nhsuk-date-input" id="example">
+      <div class="nhsuk-date-input__item">
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+            Day
+          </label>
+          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="nhsuk-date-input__item">
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+            Month
+          </label>
+          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="nhsuk-date-input__item">
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+            Year
+          </label>
+          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" inputmode="numeric">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+
+
+<a href ="one-time-passcode" role= button draggable=" false class "nhsuk-button">
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Get One Time Passcode
+        </button>
+		</a>
+  
+
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Proxy Landing 2
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        Hello FirstName LastName
+      </h1>
+
+      <p><b>NHS Number:</b> 1234567890</p>
+      <p><b>Date of Birth:</b> 01/04/2024</p>
+      <!--Card START-->
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-card__content">
+
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            Application complete
+          </h1>
+
+          <p class="nhsuk-u-font-size-24">
+            Your reference number
+            <br>
+            <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+          </p>
+          
+        </div>
+
+      </div>
+<!--Card End-->
+
+<!--Card CHange Details START-->
+<div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+  <div class="nhsuk-card__content">
+
+    <p class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+      Change my details
+    </p>
+
+    <p class="nhsuk-u-font-size-24">
+      Your reference number
+      <br>
+      <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+    </p>
+    
+  </div>
+
+</div>
+<!--Card End-->
+
+<!--Card START-->
+<div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+  <div class="nhsuk-card__content">
+
+    <p class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+      Remove myself from the list
+    </p>
+
+    <p class="nhsuk-u-font-size-24">
+      Your reference number
+      <br>
+      <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+    </p>
+    
+  </div>
+
+</div>
+<!--Card End-->
+
+<!--Card START-->
+<div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+  <div class="nhsuk-card__content">
+
+    <p class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+      Patients
+    </p>
+
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption">'Patient Table'</caption>
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            NHS Number
+          </th>
+          <th role="columnheader" class=" nhsuk-table__header--numeric" scope="col">
+            Name
+          </th>
+          <th role="columnheader" class=" nhsuk-table__header--numeric" scope="col">
+            Date Submitted
+          </th>
+          <th role="columnheader" class=" nhsuk-table__header--numeric" scope="col">
+            Relationship
+          </th>
+          <th role="columnheader" class=" nhsuk-table__header--numeric" scope="col">
+            Status
+          </th>
+          <th role="columnheader" class=" nhsuk-table__header--numeric" scope="col">
+            Column for 'Change' buttons 
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="row">0987654321</th>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£31.25</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£32.05</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="row">1234567890</th>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">Bashley Jones</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£114.50</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="row">0987654321</th>
+          <td class="nhsuk-table__cell nhsuk-table__cell--alpha">Ashley Jones</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="row">0987654321</th>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">Cashley Jones</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+          <td class="nhsuk-table__cell nhsuk-table__cell--numeric">£19.80</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+</div>
+<!--Card End-->
+      <p>We have sent you a confirmation email.</p>
+
+      <h2>What happens next</h2>
+
+      <p>Tell the user what happens next.</p>
+
+      <p>Go back to <a href="/page-templates">page templates<a>.</p>
+
+    </div>
+  </div>
+{% endblock %}
