@@ -27,6 +27,7 @@ const utils = require('./lib/utils');
 const port = process.env.PORT || config.port;
 const useDocumentation = process.env.SHOW_DOCS || config.useDocumentation;
 const onlyDocumentation = process.env.DOCS_ONLY;
+const databaseUrl = process.env.DATABASE_URL;
 
 // Initialise applications
 const app = express();
